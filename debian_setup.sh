@@ -1,10 +1,10 @@
 #!/bin/bash
 
-sudo apt update
-sudo apt upgrade
+apt update
+apt upgrade
 
 # Setup i3 window manager with config
-apt_pkgs=(i3 redshift thunar rofi python-i3ipc jq alacritty vim flameshot git)
+apt_pkgs=(i3 redshift thunar rofi jq alacritty vim flameshot git)
 sudo apt-get -y --ignore-missing install "${apt_pkgs[@]}"
 
 # Install Brave Browser
@@ -27,5 +27,5 @@ wget "https://discord.com/api/download?platform=linux&format=deb" -O discord.deb
 sudo apt install ./discord.deb
 
 # Clone my dotfiles
-git clone https://github.com/Cam-Can-Do/i3wm-config.git ~/.config/i3
-git clone https://github.com/Cam-Can-Do/dotfiles.git ~/.config/.
+git clone https://github.com/Cam-Can-Do/i3wm-config.git /home/$SUDO_USER/i3_config
+git clone https://github.com/Cam-Can-Do/dotfiles.git /home/$SUDO_USER/misc_config
