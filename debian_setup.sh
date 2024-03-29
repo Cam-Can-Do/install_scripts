@@ -4,7 +4,7 @@ apt update
 apt upgrade
 
 # Setup i3 window manager with config
-apt_pkgs=(i3 redshift thunar rofi jq python3-i3ipc xinput alacritty vim flameshot git)
+apt_pkgs=(i3-wm redshift thunar rofi jq python3-i3ipc xinput vim flameshot git)
 sudo apt-get -y --ignore-missing install "${apt_pkgs[@]}"
 
 # Install Brave Browser
