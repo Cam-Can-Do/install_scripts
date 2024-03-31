@@ -1,0 +1,63 @@
+# Installed Packages with Pacman -S:
+#
+# Bootstrapped
+vim 
+
+# I3 SETUP 
+i3
+redshift # Blue-light filter 
+rofi # launcher
+python-i3ipc
+jq # Command-line JSON Parser (used in windowing scripts)
+thunar
+
+# Misc
+git
+openssh
+code #vscode
+udisks2
+ntfs-3g # Mount NTFS
+base-devel
+python-pip
+python-pipx
+discord
+fuse
+
+#Fonts!!
+noto-fonts
+noto-fonts-cjk # Chinese, Japanese, and Korean
+noto-fonts
+noto-fonts-emoji
+noto-fonts-extra
+ 
+# Requires reboot after
+	nvidia
+
+	# Audio
+	pipewire
+	pipewire-pulse
+	pavucontrol
+
+# Other things needed
+
+
+# Echo the follow lines to .xinitrc
+# /usr/bin/pipewire &
+# /usr/bin/pipewire-pulse &
+# /usr/bin/pipewire-media-session &#
+
+# Install yay (AUR helper)
+cd ~ && git clone https://aur.archlinux.org/yay.git
+makepkg -si
+cd ~
+
+# AUR Packages (install with yay -S)
+brave-bin
+vscodium
+
+
+# Other things to download (not easily scriptable)
+# VeraCrypt
+# Kleopatra (GnuPG GUI Frontend)
+# Anki
+# Logseq
